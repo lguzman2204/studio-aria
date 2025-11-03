@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Studio Aria — Websites & AI Receptionist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="We build fast, beautiful websites and set up AI receptionists that answer calls, book appointments, and qualify leads 24/7.">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="preload" as="image" href="/assets/hero.jpg">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a href="/" class="brand"><img src="/assets/logo.svg" alt=""><strong>Studio Aria</strong></a>
+      <nav>
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/services.html">Services</a>
+        <a data-nav href="/pricing.html">Pricing</a>
+        <a data-nav href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <p class="kicker">Websites • AI Reception</p>
+        <h1>Build a legit site.<br> Add a 24/7 AI receptionist.</h1>
+        <p class="lead">We ship high-converting websites and AI call/chat reception that answers FAQs, books appointments, and qualifies leads — so you close more deals while you sleep.</p>
+        <div style="display:flex;gap:12px;margin-top:12px;">
+          <a class="btn" href="/contact.html">Get a Free Quote</a>
+          <a class="btn ghost" href="/services.html">See How It Works</a>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+          <span class="badge">1-week launch</span>
+          <span class="badge">SEO-ready</span>
+          <span class="badge">Netlify CDN</span>
+          <span class="badge">HIPAA-safe options</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/hero.jpg" alt="Mockup of website and AI call assistant">
+      </div>
+    </section>
+
+    <section style="margin-top:22px" class="grid-3">
+      <div class="card">
+        <h2>Website Creation</h2>
+        <p class="lead">Modern, fast, mobile-first sites your customers trust.</p>
+        <ul class="ul-clean">
+          <li><span class="icon"></span>3–7 page launch in days</li>
+          <li><span class="icon"></span>Lightning-fast hosting (free tier)</li>
+          <li><span class="icon"></span>Lead forms + email alerts</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>AI Receptionist</h2>
+        <p class="lead">Answers calls & chats, books, routes, and logs CRM notes.</p>
+        <ul class="ul-clean">
+          <li><span class="icon"></span>24/7 call & SMS capture</li>
+          <li><span class="icon"></span>Calendar & CRM integration</li>
+          <li><span class="icon"></span>Multilingual options</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Done-for-You</h2>
+        <p class="lead">We write copy, add images, and handle setup end-to-end.</p>
+        <ul class="ul-clean">
+          <li><span class="icon"></span>Domain & DNS setup</li>
+          <li><span class="icon"></span>SEO basics + analytics</li>
+          <li><span class="icon"></span>Zero-maintenance stack</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:22px">
+      <div class="cta">
+        <div>
+          <h2>Launch this month.</h2>
+          <p class="lead">Book a 10-minute discovery call and get a fixed quote.</p>
+        </div>
+        <div>
+          <a class="btn" href="/contact.html">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="cta">
+      <small class="muted">© <span id="y"></span> Studio Aria. All rights reserved.</small>
+      <small class="muted">Built on Netlify • SSL & CDN included</small>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>

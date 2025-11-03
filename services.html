@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Services — Studio Aria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a href="/" class="brand"><img src="/assets/logo.svg" alt=""><strong>Studio Aria</strong></a>
+      <nav>
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/services.html">Services</a>
+        <a data-nav href="/pricing.html">Pricing</a>
+        <a data-nav href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>What we do</h1>
+      <p class="lead">Two tracks: <strong>Website Creation</strong> and <strong>AI Receptionist</strong>. Use one or both — they’re better together.</p>
+    </section>
+
+    <section class="grid-2" style="margin-top:18px">
+      <div class="card">
+        <h2>Website Creation</h2>
+        <p>We design and build modern, high-speed sites that convert visitors into bookings and sales.</p>
+        <table class="table" aria-label="Website features">
+          <tr><th>Feature</th><th>Details</th></tr>
+          <tr><td>Pages</td><td>Home, About, Services, Contact (expandable)</td></tr>
+          <tr><td>Forms</td><td>Lead capture with email notifications</td></tr>
+          <tr><td>Hosting</td><td>Netlify free tier (SSL, CDN)</td></tr>
+          <tr><td>SEO</td><td>Meta tags, sitemap, basic schema</td></tr>
+          <tr><td>Analytics</td><td>Simple privacy-friendly analytics</td></tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>AI Receptionist</h2>
+        <p>We set up an AI that answers calls and chats, books meetings, and hands off hot leads to you.</p>
+        <table class="table" aria-label="AI features">
+          <tr><th>Capability</th><th>Details</th></tr>
+          <tr><td>Voice & Chat</td><td>24/7 call handling + web chat widget</td></tr>
+          <tr><td>Scheduling</td><td>Connects to Google/Outlook calendars</td></tr>
+          <tr><td>CRM</td><td>Logs notes to HubSpot/Pipedrive/etc.</td></tr>
+          <tr><td>Knowledge</td><td>Trained on your services & FAQs</td></tr>
+          <tr><td>Compliance</td><td>Call recordings optional; HIPAA-safe setups possible</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h2>Process</h2>
+      <ol class="ul-clean">
+        <li><span class="icon"></span>Discovery: goals, pages, brand, and integrations</li>
+        <li><span class="icon"></span>Build: copy + design + tech setup</li>
+        <li><span class="icon"></span>AI setup: scripts, FAQs, routing, calendars</li>
+        <li><span class="icon"></span>Launch: domain, SSL, analytics, QA</li>
+        <li><span class="icon"></span>Optimize: tweaks based on real leads</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="cta">
+      <small class="muted">© <span id="y"></span> Studio Aria</small>
+      <a class="btn" href="/contact.html">Start Your Project</a>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
