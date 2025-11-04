@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Proposal for Floyd’s Barber Shop — LCJ Web & AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tailored website + AI receptionist proposal for Floyd’s Barber Shop in Sylvania.">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+  <style>.hero-prop{position:relative;border-radius:16px;padding:32px;background:linear-gradient(180deg,rgba(37,99,235,.25),rgba(17,24,39,.8))}</style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded',()=>{const v=id=>document.getElementById(id),fmt=n=>'$'+Number(n).toLocaleString();const calc=()=>{const avg=+v('avg').value||0,leads=+v('leads').value||0,cap=(+v('cap').value||0)/100,conv=(+v('conv').value||0)/100,ai=+v('ai').value||149,add=Math.round(leads*cap*conv*avg);v('addrev').textContent=fmt(add);v('net').textContent=fmt(add-ai)};['avg','leads','cap','conv','ai'].forEach(id=>v(id).addEventListener('input',calc));calc();});
+  </script>
+</head>
+<body>
+<header class="site">
+  <div class="container nav">
+    <a href="/" class="brand"><img src="/assets/logo.svg" alt="" style="height:40px"><strong>LCJ Web & AI</strong></a>
+    <nav><a data-nav href="/">Home</a><a data-nav href="/services.html">Services</a><a data-nav href="/pricing.html">Pricing</a><a data-nav href="/contact.html">Contact</a></nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero-prop card">
+    <h1 style="margin:0">Proposal for Floyd’s Barber Shop</h1>
+    <p class="muted" style="margin:6px 0 0">Sylvania, OH • Website + 24/7 AI receptionist</p>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>Why this helps Floyd’s</h2>
+    <p class="lead">Walk-ins check hours, prices, and wait times on their phone. A fast site + AI that answers calls after-hours = more booked cuts.</p>
+    <ul class="ul-clean">
+      <li><span class="icon"></span>Mobile site with Services, Hours, Prices, Google Map, Reviews</li>
+      <li><span class="icon"></span>AI answers calls/chats, books appointments to your calendar</li>
+      <li><span class="icon"></span>Keep the classic vibe; just make it easy to find & book</li>
+    </ul>
+    <p class="muted">Current online presence appears to be Facebook-only (no standalone site found). :contentReference[oaicite:3]{index=3}</p>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>ROI quick estimate</h2>
+    <div class="grid-2">
+      <div>
+        <label>Avg revenue per haircut ($)</label><input id="avg" type="number" value="30">
+        <label>Inbound inquiries / month</label><input id="leads" type="number" value="100">
+        <label>After-hours/AI capture rate (%)</label><input id="cap" type="number" value="25">
+        <label>Close rate (%)</label><input id="conv" type="number" value="50">
+        <label>AI monthly fee ($)</label><input id="ai" type="number" value="149">
+      </div>
+      <div>
+        <p class="lead">Additional monthly revenue:</p><p class="price" style="font-size:28px" id="addrev">$0</p>
+        <p class="lead">Net after AI fee:</p><p class="price" style="font-size:28px" id="net">$0</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h2>Timeline & investment</h2>
+    <ul class="ul-clean">
+      <li><span class="icon"></span>Site (3–5 pages) one-time: <strong>$399–$699</strong></li>
+      <li><span class="icon"></span>AI receptionist monthly: <strong>$149</strong></li>
+      <li><span class="icon"></span>Launch in ~1 week after content</li>
+    </ul>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <div class="cta">
+      <div><h2>Ready to move forward?</h2><p class="muted">We’ll match your shop’s style and keep booking simple.</p></div>
+      <div><a class="btn" href="/contact.html">Book a 10-min call</a><a class="btn ghost" href="mailto:lguzman2204@gmail.com">Email: lguzman2204@gmail.com</a></div>
+    </div>
+  </section>
+</main>
+<footer class="container"><div class="cta"><small class="muted">© <span id="y"></span> LCJ Web & AI</small></div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
