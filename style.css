@@ -1,6 +1,16 @@
 :root{
-  --bg:#0b0b0c; --panel:#121214; --muted:#9CA3AF; --text:#E5E7EB; --brand:#7C3AED; --brand-2:#A78BFA; --ok:#10B981; --warn:#F59E0B;
-  --border:#1f1f21; --radius:16px; --max:1100px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --bg:#0a0f1c;          /* darker background */
+  --panel:#111827;       /* cards/nav background */
+  --muted:#9CA3AF;
+  --text:#E5E7EB;
+  --brand:#2563EB;       /* bright blue buttons */
+  --brand-2:#3B82F6;     /* lighter blue accent */
+  --ok:#10B981;
+  --warn:#F59E0B;
+  --border:#1f2937;
+  --radius:16px;
+  --max:1100px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
 *{box-sizing:border-box}
@@ -64,3 +74,4 @@ footer{
   .grid-3{grid-template-columns:1fr}
   .grid-2{grid-template-columns:1fr}
 }
+
