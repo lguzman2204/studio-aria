@@ -12,6 +12,13 @@
   --max:1100px;
   --shadow:0 10px 30px rgba(0,0,0,.35);
 }
+/* GLOBAL BACKGROUND IMAGE */
+body {
+  background: url('/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0a0f1c; /* fallback color */
+}
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,Arial}
@@ -68,6 +75,11 @@ footer{
 .cta{
   display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap
 }
+/* Slight transparency so text pops on the background */
+.card, header.site, footer {
+  background-color: rgba(17, 24, 39, 0.8); /* translucent dark panels */
+  backdrop-filter: blur(6px);
+}
 
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
@@ -75,5 +87,6 @@ footer{
   .grid-2{grid-template-columns:1fr}
 }
 .brand strong { color: #ffffff; }
+
 
 
