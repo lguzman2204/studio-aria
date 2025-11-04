@@ -20,6 +20,7 @@ body {
   background-color: #0a0f1c; /* fallback color */
 }
 
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,Arial}
 img{max-width:100%;display:block}
@@ -87,6 +88,7 @@ footer{
   .grid-2{grid-template-columns:1fr}
 }
 .brand strong { color: #ffffff; }
+
 
 
 
