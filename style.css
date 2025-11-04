@@ -76,11 +76,8 @@ footer{
 .cta{
   display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap
 }
-/* Slight transparency so text pops on the background */
-.card, header.site, footer {
-  background-color: rgba(17, 24, 39, 0.8); /* translucent dark panels */
-  backdrop-filter: blur(6px);
-}
+
+
 
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
@@ -88,6 +85,12 @@ footer{
   .grid-2{grid-template-columns:1fr}
 }
 .brand strong { color: #ffffff; }
+
+body {
+  background: url('/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #0a0f1c;
+}
 
 
 
