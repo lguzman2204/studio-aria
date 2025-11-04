@@ -74,4 +74,6 @@ footer{
   .grid-3{grid-template-columns:1fr}
   .grid-2{grid-template-columns:1fr}
 }
+.brand strong { color: #ffffff; }
+
 
