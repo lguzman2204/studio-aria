@@ -4,10 +4,58 @@
   <meta charset="utf-8">
   <title>Proposal for Floyd’s Barber Shop — LCJ Web & AI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tailored website + AI receptionist proposal for Floyd’s Barber Shop in Sylvania.">
+  <meta name="description" content="Custom website + AI receptionist proposal for Floyd’s Barber Shop in Sylvania.">
   <link rel="icon" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/style.css">
-  <style>.hero-prop{position:relative;border-radius:16px;padding:32px;background:linear-gradient(180deg,rgba(37,99,235,.25),rgba(17,24,39,.8))}</style>
+
+  <!-- Vibrant barbershop accent styling -->
+  <style>
+    body {
+      background: url('/assets/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color:#fff;
+    }
+    .hero-prop {
+      position:relative;
+      border-radius:18px;
+      padding:40px;
+      text-align:center;
+      background:linear-gradient(145deg,#EF4444 0%,#2563EB 100%);
+      box-shadow:0 8px 32px rgba(0,0,0,.4);
+    }
+    .hero-prop h1 {
+      font-family:"Bebas Neue",Impact,sans-serif;
+      font-size:3rem;
+      letter-spacing:1px;
+      margin:0;
+    }
+    .hero-prop p{font-size:1.1rem;color:#f9fafb}
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+    h2,h3{font-family:'Bebas Neue',sans-serif;color:#60A5FA;letter-spacing:.5px}
+    p,li,label,td{font-family:'Montserrat',sans-serif;}
+    .card{
+      background-color:rgba(17,24,39,0.85);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:16px;
+      padding:24px;
+      box-shadow:0 6px 24px rgba(0,0,0,.3);
+    }
+    .check{display:inline-block;width:16px;height:16px;background:#10B981;border-radius:4px;margin-right:8px}
+    .cta{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .btn{
+      background:linear-gradient(90deg,#EF4444,#2563EB);
+      border:none;
+      color:white;
+      padding:12px 20px;
+      border-radius:10px;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:.5px;
+      box-shadow:0 3px 10px rgba(0,0,0,.3);
+    }
+    .btn:hover{opacity:.9;transform:translateY(-1px)}
+    footer{border-top:1px solid rgba(255,255,255,.2);margin-top:40px;text-align:center}
+  </style>
   <script defer>
     document.addEventListener('DOMContentLoaded',()=>{const v=id=>document.getElementById(id),fmt=n=>'$'+Number(n).toLocaleString();const calc=()=>{const avg=+v('avg').value||0,leads=+v('leads').value||0,cap=(+v('cap').value||0)/100,conv=(+v('conv').value||0)/100,ai=+v('ai').value||149,add=Math.round(leads*cap*conv*avg);v('addrev').textContent=fmt(add);v('net').textContent=fmt(add-ai)};['avg','leads','cap','conv','ai'].forEach(id=>v(id).addEventListener('input',calc));calc();});
   </script>
@@ -15,61 +63,76 @@
 <body>
 <header class="site">
   <div class="container nav">
-    <a href="/" class="brand"><img src="/assets/logo.svg" alt="" style="height:40px"><strong>LCJ Web & AI</strong></a>
-    <nav><a data-nav href="/">Home</a><a data-nav href="/services.html">Services</a><a data-nav href="/pricing.html">Pricing</a><a data-nav href="/contact.html">Contact</a></nav>
+    <a href="/" class="brand"><img src="/assets/logo.svg" alt="" style="height:42px"><strong>LCJ Web & AI</strong></a>
+    <nav>
+      <a data-nav href="/">Home</a>
+      <a data-nav href="/services.html">Services</a>
+      <a data-nav href="/pricing.html">Pricing</a>
+      <a data-nav href="/contact.html">Contact</a>
+    </nav>
   </div>
 </header>
+
 <main class="container">
-  <section class="hero-prop card">
-    <h1 style="margin:0">Proposal for Floyd’s Barber Shop</h1>
-    <p class="muted" style="margin:6px 0 0">Sylvania, OH • Website + 24/7 AI receptionist</p>
+  <section class="hero-prop">
+    <h1>Floyd’s Barber Shop</h1>
+    <p>Website + AI Receptionist Proposal — Sylvania, OH</p>
   </section>
 
-  <section class="card" style="margin-top:16px">
-    <h2>Why this helps Floyd’s</h2>
-    <p class="lead">Walk-ins check hours, prices, and wait times on their phone. A fast site + AI that answers calls after-hours = more booked cuts.</p>
+  <section class="card" style="margin-top:20px">
+    <h2>Why Floyd’s needs this</h2>
+    <p class="lead">You’ve built a loyal local crowd. But walk-ins who search “barber Sylvania” mostly see Facebook.  
+    A fast, mobile-ready site + AI that answers calls after hours = more booked cuts & repeat clients.</p>
     <ul class="ul-clean">
-      <li><span class="icon"></span>Mobile site with Services, Hours, Prices, Google Map, Reviews</li>
-      <li><span class="icon"></span>AI answers calls/chats, books appointments to your calendar</li>
-      <li><span class="icon"></span>Keep the classic vibe; just make it easy to find & book</li>
+      <li><span class="check"></span>Home / Services / Prices / Map / Book Now pages</li>
+      <li><span class="check"></span>AI receptionist answers texts + calls 24 ⁄ 7 and sets appointments</li>
+      <li><span class="check"></span>Red-blue color palette, barbershop stripes, bold headlines</li>
     </ul>
-    <p class="muted">Current online presence appears to be Facebook-only (no standalone site found). :contentReference[oaicite:3]{index=3}</p>
   </section>
 
-  <section class="card" style="margin-top:16px">
-    <h2>ROI quick estimate</h2>
+  <section class="card" style="margin-top:20px">
+    <h2>ROI estimator</h2>
     <div class="grid-2">
       <div>
         <label>Avg revenue per haircut ($)</label><input id="avg" type="number" value="30">
         <label>Inbound inquiries / month</label><input id="leads" type="number" value="100">
-        <label>After-hours/AI capture rate (%)</label><input id="cap" type="number" value="25">
+        <label>After-hours capture rate (%)</label><input id="cap" type="number" value="25">
         <label>Close rate (%)</label><input id="conv" type="number" value="50">
         <label>AI monthly fee ($)</label><input id="ai" type="number" value="149">
       </div>
       <div>
-        <p class="lead">Additional monthly revenue:</p><p class="price" style="font-size:28px" id="addrev">$0</p>
-        <p class="lead">Net after AI fee:</p><p class="price" style="font-size:28px" id="net">$0</p>
+        <p class="lead">Extra monthly revenue:</p><p class="num" id="addrev">$0</p>
+        <p class="lead">Net after AI fee:</p><p class="num" id="net">$0</p>
       </div>
     </div>
   </section>
 
-  <section class="card" style="margin-top:16px">
-    <h2>Timeline & investment</h2>
+  <section class="card" style="margin-top:20px">
+    <h2>Timeline & Investment</h2>
     <ul class="ul-clean">
-      <li><span class="icon"></span>Site (3–5 pages) one-time: <strong>$399–$699</strong></li>
-      <li><span class="icon"></span>AI receptionist monthly: <strong>$149</strong></li>
-      <li><span class="icon"></span>Launch in ~1 week after content</li>
+      <li><span class="check"></span>3-5 page site build — <strong>$499</strong> (one-time)</li>
+      <li><span class="check"></span>AI receptionist — <strong>$149 / month</strong></li>
+      <li><span class="check"></span>Launch in ~ 1 week after content handoff</li>
     </ul>
   </section>
 
-  <section class="card" style="margin-top:16px">
+  <section class="card" style="margin-top:20px">
     <div class="cta">
-      <div><h2>Ready to move forward?</h2><p class="muted">We’ll match your shop’s style and keep booking simple.</p></div>
-      <div><a class="btn" href="/contact.html">Book a 10-min call</a><a class="btn ghost" href="mailto:lguzman2204@gmail.com">Email: lguzman2204@gmail.com</a></div>
+      <div>
+        <h2>Let’s make Floyd’s the #1 Sylvania barbershop online</h2>
+        <p>We’ll match your shop’s colors and style and handle everything from setup to bookings.</p>
+      </div>
+      <div>
+        <a class="btn" href="/contact.html">Book a 10-min Call</a>
+        <a class="btn" href="mailto:lguzman2204@gmail.com">Email Luis</a>
+      </div>
     </div>
   </section>
 </main>
-<footer class="container"><div class="cta"><small class="muted">© <span id="y"></span> LCJ Web & AI</small></div></footer>
+
+<footer class="container">
+  <small>© <span id="y"></span> LCJ Web & AI — Proposal for Floyd’s Barber Shop</small>
+</footer>
 <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
